@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>スーパー小澤システム</title>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">スーパー小澤システム</a>
+    </div>
+    <div class="navbar-collapse collapse">
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <form id="search-form">
+        <div class="form-group">
+          <label>Search word</label>
+          <input id="search-word" class="form-control"/>
+        </div>
+        <input type="submit" class="btn btn-default"/>
+      </form>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px">
+    <div class="col-sm-12">
+      <div class="thumbnail" id="display-wrapper">
+        <svg id="display"></svg>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/egrid-core/dist/dagre.js"></script>
+<script src="bower_components/egrid-core/dist/egrid-core.js"></script>
+<script src="egm-nlp.js"></script>
+</body>
+</html>
